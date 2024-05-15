@@ -1,0 +1,51 @@
+/* styles.css */
+
+.App {
+    position: relative; /* Ensure the overlay is positioned relative to this container */
+    height: 100vh; /* Set the height of the container to the viewport height */
+    width: 100vw; /* Set the width of the container to the viewport width */
+    overflow: hidden; /* Hide any overflow content */
+  }
+  
+  /* Additional styling for the App container if needed */
+  
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    
+  }
+  
+  .overlay h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  .overlay p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .overlay button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  
+  .overlay button:hover {
+    background-color: #83c286;
+  }
+  

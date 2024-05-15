@@ -1,0 +1,12 @@
+.background-about{
+    
+    background-image: url("https://www.aertsen.in/wp-content/uploads/2022/11/Stunning-Modern-Living-Room-Interior-Design-Ideas-in-India.jpg");
+    /* background-color: yellow; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: screen;
+    height: 600px;
+    background-position: center;
+    background-position-y: center;
+    
+}
