@@ -13,7 +13,7 @@ import RecentProject from "./pages/RecentProject";
 import ServicesPage from "./pages/ServicesPage";
 import Privacy from "./pages/Privacy";
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+ 
 
   return (
     <div className=" mx-auto flex w-screen flex-col justify-between  text-center text-black">

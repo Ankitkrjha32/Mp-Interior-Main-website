@@ -3,6 +3,10 @@ import React from 'react'
 
 import { useState, useEffect } from 'react';
 import '../Style/ImageSlider.css';
+import ContactModal from './ContactModel';
+
+
+
 
 const backgroundImageUrls = [
   'url(https://media.designcafe.com/wp-content/uploads/2020/05/14155922/modern-bedroom-design-blue-white-bed-design-image-online.jpg)',
@@ -18,6 +22,13 @@ const ultimateTime = 50000; // Total time until the slideshow stops in milliseco
 
 function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  
+
+
+const openModal = () => setModalIsOpen(true);
+const closeModal = () => setModalIsOpen(false);
+
 
   useEffect(() => {
     const slideInterval = setInterval(() => {
@@ -50,8 +61,23 @@ function App() {
         <div className="overlay">
         <h1>Welcome to MP Design and Decoration</h1>
         <p>Transforming spaces into your dream designs</p>
-        <button>Contact Us</button>
-      </div>
+  
+
+
+        <button
+            className="bg-blue-500 lg:w-[180px] w-[150px] text-white font-bold py-2 px-4 mt-5 rounded hover:bg-blue-700 transition duration-300"
+            onClick={openModal}
+        >
+            Contact Us
+        </button>
+        
+   
+        
+</div>
+
+<ContactModal isOpen={modalIsOpen} onClose={closeModal} />
+        
+      
     </div>
   );
 }
